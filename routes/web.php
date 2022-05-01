@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ServicesController;
+use App\Http\Controllers\QuestionController;
+use App\Http\Controllers\FeedbackController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home');
+})->name('home');
+
+Route::get('/services',[ServicesController::class,'index'])->name('services');
+Route::get('/faq',[QuestionController::class,'index'])->name('FAQ');
+Route::post('questions',[QuestionController::class,'store'])->name('questions');
+Route::get('/feedback',[FeedbackController::class,'index'])->name('feedback');
