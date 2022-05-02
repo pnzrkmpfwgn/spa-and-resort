@@ -22,4 +22,5 @@ Route::get('/', function () {
 Route::get('/services',[ServicesController::class,'index'])->name('services');
 Route::get('/faq',[QuestionController::class,'index'])->name('FAQ');
 Route::post('questions',[QuestionController::class,'store'])->name('questions');
-Route::get('/feedback',[FeedbackController::class,'index'])->name('feedback');
+Route::get('/feedbacks',[FeedbackController::class,'index'])->name('feedbacks');
+Route::post('feedbacks',[FeedbackController::class,'store'])->name('feedbacks');
