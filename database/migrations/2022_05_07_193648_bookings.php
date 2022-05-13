@@ -22,6 +22,8 @@ return new class extends Migration
         $table->string('service');
         $table->string('period');
         $table->string('persons');
+        $table->string("payment_id");
+        $table->string("status");
         $table->timestamps();
         });
     }

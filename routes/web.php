@@ -5,6 +5,7 @@ use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\CancelBookingController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,3 +29,6 @@ Route::post('feedbacks',[FeedbackController::class,'store'])->name('feedbacks');
 Route::get('/booking',[BookingController::class,'index'])->name('booking');
 Route::post('booking',[BookingController::class,'check'])->name('booking');
 Route::post('booking_cont',[BookingController::class,'store'])->name('booking_cont');
+Route::get('/cancel-booking',[CancelBookingController::class,'index'])->name('cancel-booking');
+//add a post route for cancel-booking
+// and create a payment page where we validate the given card info via JS artificially

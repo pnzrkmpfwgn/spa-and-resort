@@ -15,6 +15,8 @@ class Booking extends Model
         'date',
         'service',
         'period',
-        'persons'
+        'persons',
+        'payment_id',
+        'status'
     ];
 }

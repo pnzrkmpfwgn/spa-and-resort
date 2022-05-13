@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Booking;
+use Illuminate\Support\Str;
 
 class BookingController extends Controller {
     public function check(Request $request){
@@ -26,8 +27,11 @@ class BookingController extends Controller {
         $post -> date = $request -> date;
         $post -> service = $request -> service;
         $post -> persons= $request -> persons;
+        $uniqid = Str::random(9);
+        $post -> payment_id = $uniqid;
+        $post -> status = "OK";
         $post -> save(); 
-        //Mail::to($post->email)->send(new QuestionAnswered);
+        Mail::to($post->email)->send(new QuestionAnswered);
         return back();
     }
 }
