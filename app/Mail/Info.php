@@ -11,15 +11,15 @@ use App\Models\Booking;
 class Info extends Mailable
 {
     use Queueable, SerializesModels;
-
+    public $order; 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct(Booking $payment_id)
+    public function __construct(Booking $order)
     {
-        $this->payment_id = $payment_id;
+        $this->order = $order;
     }
 
     /**
@@ -29,6 +29,6 @@ class Info extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.Info.info');
+        return $this->markdown('emails.Info.info');
     }
 }

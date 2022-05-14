@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Booking;
+use App\Mail\Info;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Mail;
 
 class BookingController extends Controller {
     public function check(Request $request){
@@ -31,7 +33,7 @@ class BookingController extends Controller {
         $post -> payment_id = $uniqid;
         $post -> status = "OK";
         $post -> save(); 
-        Mail::to($post->email)->send(new QuestionAnswered);
+        Mail::to($post->email)->send(new Info($post));
         return back();
     }
 }
