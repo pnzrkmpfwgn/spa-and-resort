@@ -15,11 +15,12 @@ This is a very simple application for booking Spa and saloon services. For now i
 ## -PHP installation
 [Download PHP](https://windows.php.net/download#php-8.0). 
 After the download you have to create directory manually on your disk (e.g. C:/PHP). Extract the files to the directory you have created. Then you have create a path to that directory by adding path variable to your system's envoirement variables section. In order to do that you can search Edit Envoirement variables (Türkçesi Sistem ortam değişikliklerini düzenleyin) in your search bar or go to This Computer>properties>Advanced System settings>Advanced section, click the "Envoirement Variables" at the bottom.  In the following window on the top section. Find path select it and click edit. In the following window click add and add new path addressing the directory you have created (e.g. C:/PHP)
-![1](public/images/1.jpg)
-![2](public/images/2.jpg)
-![3](public/images/3.jpg)
-![4](public/images/4.jpg)
-![5](public/images/5.jpg)
+![1](https://user-images.githubusercontent.com/61189367/168450624-3419a4e5-f3a3-46c6-94a7-b1f4ba9b9eb3.JPG)
+![2](https://user-images.githubusercontent.com/61189367/168450633-324ae801-899e-455a-ba13-30363c1daa03.JPG)
+![3](https://user-images.githubusercontent.com/61189367/168450636-a038b1a6-4e3f-4b50-8029-d6b4398721ac.JPG)
+![4](https://user-images.githubusercontent.com/61189367/168450639-3dd9073d-8794-470a-9c77-d92cd5e17b30.JPG)
+![5](https://user-images.githubusercontent.com/61189367/168450640-214601c4-6257-43c3-8a47-178244c89f28.JPG)
+
 
 
 Some of the version windows doesn't have the window like fifth window. There will be a lot simple window. You can simply follow the same steps then select the path and click edit add ; before entering adress of your path. 
@@ -41,15 +42,18 @@ In your console simply type this:
 ## Mailtrap Credentials and your .env file
 When you download this project through Github you won't have any .env file inside the directory of this project. You can create a new .env file (just create a new file and name it .env) or you can rename the '.env.example' to '.env'. Either way you have to copy .env.example into your .env file. After registering to mailtrap you will have to add an inbox. After creating your inbox, go into your inbox and click the SMTP Settings if it's not already selected. On the right panel you will see your credentials. Your username and password are right next to the 'user' writting like this ######;######. Before ; is your username and the after is your password. Take these to your .env file and paste it accordingly. You will have to change MAIL_FROM_ADDRESS which is the email address that you used to register your mailtrap account. As we are using Mailtrap, you will have to change MAIL_HOST to smtp.mailtrap.io. Lastly you have to change MAIL_PORT accordingly to your Smtp Settings which you can find besides 'url' at the end of whatever string written in there.
 
-![6](public/images/6.jpg)
-![7](public/images/7.jpg)
-![8](public/images/8.jpg)
-![9](public/images/9.jpg)
+![6](https://user-images.githubusercontent.com/61189367/168450653-240aec28-7182-4dda-b0e8-454bab2f6a40.JPG)
+![7](https://user-imag![8](https://user-images.githubusercontent.com/61189367/168450656-78dc8bb4-ca43-44f3-abb2-2088fa6234c1.JPG)
+es.githubuserconten![9](https://user-images.githubusercontent.com/61189367/168450657-71b1a1cb-d72e-4a8b-8e89-b5e97744ed68.JPG)
+t.com/![10](https://user-images.githubusercontent.com/61189367/168450658-83bfd3f6-2a3e-4df7-bd5c-26d377428853.JPG)
+61189367/168450655-9147f7c5-6959-4435-9c18-c120b47f1ce4.JPG)
 
-## XAMPP Installation
+[11](https://user-images.githubusercontent.com/61189367/168450660-41436cc1-2d93-4d6e-91a6-47559f89d931.JPG)
+
+## XAMPP Installation!
+
 There is nothing special with XAMPP's installation. Download it here, install and run it. How ever you will have to configure your .env file's DB_CONNECTION section if you want to change anything about your db. However if you haven't changed anything or won't change anything you won't have to change anything.
 
-![10](public/images/10.jpg)
 Your .env will look like this. If you don't want to change anything it can stay like this.
 
 ## Installation of the App
