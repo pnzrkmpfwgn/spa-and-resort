@@ -45,9 +45,11 @@ When you download this project through Github you won't have any .env file insid
 
 ![6](https://user-images.githubusercontent.com/61189367/168450653-240aec28-7182-4dda-b0e8-454bab2f6a40.JPG)
 ![7](https://user-imag![8](https://user-images.githubusercontent.com/61189367/168450656-78dc8bb4-ca43-44f3-abb2-2088fa6234c1.JPG)
-es.githubuserconten![9](https://user-images.githubusercontent.com/61189367/168450657-71b1a1cb-d72e-4a8b-8e89-b5e97744ed68.JPG)
-t.com/![10](https://user-images.githubusercontent.com/61189367/168450658-83bfd3f6-2a3e-4df7-bd5c-26d377428853.JPG)
-61189367/168450655-9147f7c5-6959-4435-9c18-c120b47f1ce4.JPG)
+![8](https://user-images.githubusercontent.com/61189367/168450754-22daeb97-2883-4ffe-9ff1-3ca243ca49e7.JPG)
+![9](https://user-images.githubusercontent.com/61189367/168450761-7ea4e638-d262-4efb-8175-d0f2a19dddcd.JPG)
+![10](https://user-images.githubusercontent.com/61189367/168450772-282d8850-120e-49c1-ba64-8ef9fc3e2f68.JPG)
+
+
 
 [11](https://user-images.githubusercontent.com/61189367/168450660-41436cc1-2d93-4d6e-91a6-47559f89d931.JPG)
 
