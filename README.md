@@ -1,64 +1,70 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Spa and Saloon Booking System Made With Laravel
+This is a very simple application for booking Spa and saloon services. For now it has no active payment services for sake of brevitiy and we really don't consider making any contract with any bank for demo application.  In this document I will show you how to run this application in windows.
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Basic Requirements for  running the app.
 
-## About Laravel
+- Computer
+- Internet Connection
+- Mouse and keyboard (unless you are not a netrunner or something, I don't know)
+- PHP installed
+- Composer CLI
+- Laravel CLI
+- Mailtrap credentials
+- XAMPP
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## -PHP installation
+[Download PHP](https://windows.php.net/download#php-8.0). 
+After the download you have to create directory manually on your disk (e.g. C:/PHP). Extract the files to the directory you have created. Then you have create a path to that directory by adding path variable to your system's envoirement variables section. In order to do that you can search Edit Envoirement variables (Türkçesi Sistem ortam değişikliklerini düzenleyin) in your search bar or go to This Computer>properties>Advanced System settings>Advanced section, click the "Envoirement Variables" at the bottom.  In the following window on the top section. Find path select it and click edit. In the following window click add and add new path addressing the directory you have created (e.g. C:/PHP)
+![1](public/images/1.jpg)
+![2](public/images/2.jpg)
+![3](public/images/3.jpg)
+![4](public/images/4.jpg)
+![5](public/images/5.jpg)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Some of the version windows doesn't have the window like fifth window. There will be a lot simple window. You can simply follow the same steps then select the path and click edit add ; before entering adress of your path. 
 
-## Learning Laravel
+In order to work with PhPyou have to configure your php.ini file. You can change your php.ini file with [mine](https://drive.google.com/file/d/1DNrgEgIqZKFS4x39uuN9vCXLrTYX4rdh/view?usp=sharing) but if you need  anything extra you can find the needed extension inside of your php.ini file and enable it simply by deleting ';' at the begining. 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Check your if PhP work by typing this to your cmd:
+ 
+	php --version
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Composer Installation
+You can download it [here](https://getcomposer.org/download/) with windows installer option. If you are masochist  you can try to install it manually.
 
-## Laravel Sponsors
+## Laravel Installation
+In your console simply type this:
+	
+	composer  global  require  "laravel/installer=~1.1"
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Mailtrap Credentials and your .env file
+When you download this project through Github you won't have any .env file inside the directory of this project. You can create a new .env file (just create a new file and name it .env) or you can rename the '.env.example' to '.env'. Either way you have to copy .env.example into your .env file. After registering to mailtrap you will have to add an inbox. After creating your inbox, go into your inbox and click the SMTP Settings if it's not already selected. On the right panel you will see your credentials. Your username and password are right next to the 'user' writting like this ######;######. Before ; is your username and the after is your password. Take these to your .env file and paste it accordingly. You will have to change MAIL_FROM_ADDRESS which is the email address that you used to register your mailtrap account. As we are using Mailtrap, you will have to change MAIL_HOST to smtp.mailtrap.io. Lastly you have to change MAIL_PORT accordingly to your Smtp Settings which you can find besides 'url' at the end of whatever string written in there.
 
-### Premium Partners
+![6](public/images/6.jpg)
+![7](public/images/7.jpg)
+![8](public/images/8.jpg)
+![9](public/images/9.jpg)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## XAMPP Installation
+There is nothing special with XAMPP's installation. Download it here, install and run it. How ever you will have to configure your .env file's DB_CONNECTION section if you want to change anything about your db. However if you haven't changed anything or won't change anything you won't have to change anything.
 
-## Contributing
+![10](public/images/10.jpg)
+Your .env will look like this. If you don't want to change anything it can stay like this.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Installation of the App
+Run these commands in order. 
 
-## Code of Conduct
+	composer update
+	composer install
+After the installation run your XAMPP app. Start Apache and MySQL modules. Then press admin button of MySQL. Your browser will automatically open phpmyadmin page of your database. In this page open 'databases' tab and create a database called 'spa_and_resort'. I created tables under the name of this database so if the name is incorrect it won't work. If you wish to name it differently, don't. (Just kidding you can do that but I won't show it in here). 
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+![11](public/images/11.jpg)
 
-## Security Vulnerabilities
+Finally you will have to run migrations. In order to do that open a console in project's directory. If you are using Git bash you can right click inside project directory and click git bash. however if you wish to use good ol' cmd. Run you cmd and simply find the project folder using cd command. If you are using git bash you will see (master) at the very end of the adress of the console. That means you are in the correct folder. When you are in the correct address run this command.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+	php artisan migrate
+If it works correctly you will see the tables inside 'spa_and_resort' database. This means we finished installing the app and connecting the database. In order to run the app run this command:
+	
+	php artisan serve
+You will see the local address visit that local address in your browser and va la enjoy the application.

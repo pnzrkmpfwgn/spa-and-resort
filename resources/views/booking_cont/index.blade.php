@@ -8,27 +8,27 @@
         <label for="date">Date</label>
         <br>
         <br>
-        <input type="date" name="date" id="date" >
+        <input required type="date" name="date" id="date" >
         <br>
         <br>
         <label for="spa_services_title">Spa Services</label>
         <br/>
         <br/>
-        <input name="service" type="radio" value="RELAXING MASSAGE 60'" >
+        <input required name="service" type="radio" value="RELAXING MASSAGE 60'" >
         <label for="service">RELAXING MASSAGE 60'</label>
-        <input name="service" type="radio" value="RELAXING MASSAGE 45'">
+        <input required name="service" type="radio" value="RELAXING MASSAGE 45'">
         <label for="service">RELAXING MASSAGE 45'</label>
-        <input name="service" type="radio" value="LOVE YOURSELF & 45' MASSAGE" >
+        <input required name="service" type="radio" value="LOVE YOURSELF & 45' MASSAGE" >
         <label for="service">LOVE YOURSELF & 45' MASSAGE</label>
         <hr>
         <br>
         <label for="saloon_services_title">Saloon Services</label>
         <br>
-        <input name="service" type="radio" value="Women's Haircut w/Styling" >
+        <input required name="service" type="radio" value="Women's Haircut w/Styling" >
         <label for="service">Women's Haircut w/Styling</label>
-        <input name="service" type="radio" value="Men's Haircut" >
+        <input required name="service" type="radio" value="Men's Haircut" >
         <label for="service">Men's Haircut</label>
-        <input name="service" type="radio" value="Children's Haircut" >
+        <input required name="service" type="radio" value="Children's Haircut" >
         <label for="service">Children's Haircut</label>
         <br>
         <br>
@@ -47,7 +47,7 @@
         @for($i=0;$i < count($solid_periods) ;$i++)
         @if(count($periods)===0)
             @for ($i = 0; $i < count($solid_periods); $i++)
-                <input type="radio" name="period" value={{$solid_periods[$i]}}>
+                <input required type="radio" name="period" value={{$solid_periods[$i]}}>
                 <label for="period">{{$solid_periods[$i]}}</label><br>
             @endfor
         @endif
@@ -68,7 +68,7 @@
        @if (count($periods)!==0)   
         @for($i=0;$i < count($solid_periods);$i++)
         @if ($check_period[$i])
-        <input type="radio" name="period" value={{$solid_periods[$i]}}>
+        <input required type="radio" name="period" value={{$solid_periods[$i]}}>
         <label for="period">{{$solid_periods[$i]}}</label><br> 
         @else
         <input disabled type="radio" name="period" value={{$solid_periods[$i]}}>
@@ -82,11 +82,11 @@
         <h3>Personel info</h3>
         <label for="name_surname">Name Surname</label>
         <br>
-        <input type="text" name="name_surname" placeholder="Your Name and Surname">
+        <input required type="text" name="name_surname" placeholder="Your Name and Surname">
         <br>
         <label for="email">Email</label>
         <br>
-        <input type="email" placeholder="Your Email"  name="email" >
+        <input required type="email" placeholder="Your Email"  name="email" >
         <br>
         <br>
         {{-- @php
@@ -104,7 +104,7 @@
           <option value="3">3</option>
           <option value="4">4</option>
       </select>
-        {{-- <h2> Payment </h2>
+      <h2> Payment </h2>
         <div class="row">
             <div class="col-75">
               <div class="container">                    
@@ -144,7 +144,7 @@
                       <label for="cname">Name on Card</label>
                       <input required type="text" id="cname" name="cardname" placeholder="John More Doe">
                       <label for="ccnum">Credit card number</label>
-                      <input required type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                      <input required type="text" id="ccnum" min="16" max="16" name="cardnumber" placeholder="1111-2222-3333-4444">
                       <label for="expmonth">Exp Month</label>
                       <input required type="text" id="expmonth" name="expmonth" placeholder="September">
                       <div class="row">
@@ -163,7 +163,7 @@
             </div>
           </div>
           <br>
-          <br> --}}
+          <br> 
           <button type="submit" > Book it </button> 
        </form>
 
