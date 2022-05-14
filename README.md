@@ -44,14 +44,17 @@ In your console simply type this:
 When you download this project through Github you won't have any .env file inside the directory of this project. You can create a new .env file (just create a new file and name it .env) or you can rename the '.env.example' to '.env'. Either way you have to copy .env.example into your .env file. After registering to mailtrap you will have to add an inbox. After creating your inbox, go into your inbox and click the SMTP Settings if it's not already selected. On the right panel you will see your credentials. Your username and password are right next to the 'user' writting like this ######;######. Before ; is your username and the after is your password. Take these to your .env file and paste it accordingly. You will have to change MAIL_FROM_ADDRESS which is the email address that you used to register your mailtrap account. As we are using Mailtrap, you will have to change MAIL_HOST to smtp.mailtrap.io. Lastly you have to change MAIL_PORT accordingly to your Smtp Settings which you can find besides 'url' at the end of whatever string written in there.
 
 ![6](https://user-images.githubusercontent.com/61189367/168450653-240aec28-7182-4dda-b0e8-454bab2f6a40.JPG)
-![7](https://user-imag![8](https://user-images.githubusercontent.com/61189367/168450656-78dc8bb4-ca43-44f3-abb2-2088fa6234c1.JPG)
+
+![7](https://user-images.githubusercontent.com/61189367/168450788-0f0c7962-e942-4274-bb14-2ade3ea8942f.JPG)
+
 ![8](https://user-images.githubusercontent.com/61189367/168450754-22daeb97-2883-4ffe-9ff1-3ca243ca49e7.JPG)
+
 ![9](https://user-images.githubusercontent.com/61189367/168450761-7ea4e638-d262-4efb-8175-d0f2a19dddcd.JPG)
+
 ![10](https://user-images.githubusercontent.com/61189367/168450772-282d8850-120e-49c1-ba64-8ef9fc3e2f68.JPG)
 
 
 
-[11](https://user-images.githubusercontent.com/61189367/168450660-41436cc1-2d93-4d6e-91a6-47559f89d931.JPG)
 
 ## XAMPP Installation!
 
@@ -66,7 +69,8 @@ Run these commands in order.
 	composer install
 After the installation run your XAMPP app. Start Apache and MySQL modules. Then press admin button of MySQL. Your browser will automatically open phpmyadmin page of your database. In this page open 'databases' tab and create a database called 'spa_and_resort'. I created tables under the name of this database so if the name is incorrect it won't work. If you wish to name it differently, don't. (Just kidding you can do that but I won't show it in here). 
 
-![11](public/images/11.jpg)
+
+[11](https://user-images.githubusercontent.com/61189367/168450660-41436cc1-2d93-4d6e-91a6-47559f89d931.JPG)
 
 Finally you will have to run migrations. In order to do that open a console in project's directory. If you are using Git bash you can right click inside project directory and click git bash. however if you wish to use good ol' cmd. Run you cmd and simply find the project folder using cd command. If you are using git bash you will see (master) at the very end of the adress of the console. That means you are in the correct folder. When you are in the correct address run this command.
 
