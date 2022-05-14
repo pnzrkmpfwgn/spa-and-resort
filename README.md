@@ -15,6 +15,7 @@ This is a very simple application for booking Spa and saloon services. For now i
 ## -PHP installation
 [Download PHP](https://windows.php.net/download#php-8.0). 
 After the download you have to create directory manually on your disk (e.g. C:/PHP). Extract the files to the directory you have created. Then you have create a path to that directory by adding path variable to your system's envoirement variables section. In order to do that you can search Edit Envoirement variables (Türkçesi Sistem ortam değişikliklerini düzenleyin) in your search bar or go to This Computer>properties>Advanced System settings>Advanced section, click the "Envoirement Variables" at the bottom.  In the following window on the top section. Find path select it and click edit. In the following window click add and add new path addressing the directory you have created (e.g. C:/PHP)
+
 ![1](https://user-images.githubusercontent.com/61189367/168450624-3419a4e5-f3a3-46c6-94a7-b1f4ba9b9eb3.JPG)
 ![2](https://user-images.githubusercontent.com/61189367/168450633-324ae801-899e-455a-ba13-30363c1daa03.JPG)
 ![3](https://user-images.githubusercontent.com/61189367/168450636-a038b1a6-4e3f-4b50-8029-d6b4398721ac.JPG)
