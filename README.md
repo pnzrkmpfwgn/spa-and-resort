@@ -70,7 +70,7 @@ Run these commands in order.
 After the installation run your XAMPP app. Start Apache and MySQL modules. Then press admin button of MySQL. Your browser will automatically open phpmyadmin page of your database. In this page open 'databases' tab and create a database called 'spa_and_resort'. I created tables under the name of this database so if the name is incorrect it won't work. If you wish to name it differently, don't. (Just kidding you can do that but I won't show it in here). 
 
 
-[11](https://user-images.githubusercontent.com/61189367/168450660-41436cc1-2d93-4d6e-91a6-47559f89d931.JPG)
+![11](https://user-images.githubusercontent.com/61189367/168450660-41436cc1-2d93-4d6e-91a6-47559f89d931.JPG)
 
 Finally you will have to run migrations. In order to do that open a console in project's directory. If you are using Git bash you can right click inside project directory and click git bash. however if you wish to use good ol' cmd. Run you cmd and simply find the project folder using cd command. If you are using git bash you will see (master) at the very end of the adress of the console. That means you are in the correct folder. When you are in the correct address run this command.
 
