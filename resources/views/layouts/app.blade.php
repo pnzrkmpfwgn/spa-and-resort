@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url('css/layout.css')}}">
+    <link rel="stylesheet" href="{{url('css/layouts.css')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -23,7 +23,7 @@
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" id="navbarr"> 
     <div class="container">
 
-      <a href="index.html"><img src="fotoz/Ülkü Spa.png" class="navbar-brand" id="SpaLogo"/></a>
+      <a href="/"><img src="images/18.png" class="navbar-brand" id="SpaLogo"/></a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
         <span class="navbar-toggler-icon"></span>
@@ -35,7 +35,7 @@
            
           
           <li class="nav-item">
-            <a href="Book.html" class="nav-link text-black">Book</a>  
+            <a href="/booking" class="nav-link text-black">Book</a>  
             </li>
 
             <!-- <li class="nav-item">
@@ -59,9 +59,6 @@
       </div>
     </div>
   </nav>
-  <button type="button" class="btn" data-bs-toggle="offcanvas" data-bs-target="#off" id="offcanvas-button">
-    Click For More Services
-</button>
  </div>
     @yield('content')
 </body>

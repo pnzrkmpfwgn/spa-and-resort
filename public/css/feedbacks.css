@@ -1,0 +1,137 @@
+body{
+    background:rgb(34, 33, 33);
+}
+
+a:link {
+    text-decoration: none;
+  }
+
+#SpaLogo{
+    height:200px;
+    position: relative;
+    right:70px;
+}
+
+#navbarr{
+    height:70px;
+}
+
+.TextOrIcon-Gold{
+    color:rgba(194,164,113,255);
+}
+
+.TextOrIcon-Grey{
+    color:rgb(196, 186, 186);
+}
+
+.nav-link{
+    background-color: rgba(194,164,113,255);
+}
+
+
+#Başlıg{
+    position:absolute;
+    top: 40px;
+    left: 250px;
+}
+
+#Y-Email{
+    position:absolute;
+    top: 90px;
+    left: 250px;
+}
+
+#Title_Feed{
+    position:absolute;
+    top: 180px;
+    left: 250px;
+}
+
+#Question_Section{
+    position:absolute;
+    top: 260px;
+    left: 250px;
+}
+
+#SubmitButt{
+    background-color: rgba(194,164,113,255);
+    color:black;
+}
+
+#SubmitButt:hover{
+    background-color: black;
+    color:rgba(194,164,113,255);
+}
+
+
+/* CustomScrollBar */
+
+::-webkit-scrollbar{
+    width:17px; 
+}
+
+::-webkit-scrollbar-track{ 
+    /*background of scrollbar*/
+    border: 3px solid #2e2e2c;  /*scrollbar border px,style,color*/
+    background-color: #35322c;  /*background of range of scrollbar*/
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, rgba(194,164,113,255), rgb(94, 74, 30)); /*the draggable scrolling handle.*/
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(66, 66, 66); 
+}
+
+::-webkit-scrollbar-button:single-button{ /*buttonbackground of scrollbar*/
+    background-color: #202020;
+    display: block;
+    /* border-style: solid; */
+    /* height: 13px;
+    width: 16px; */
+    background-size:10px;
+    background-repeat: no-repeat;
+}
+
+/*UP BUTTONS*/
+::-webkit-scrollbar-button:single-button:vertical:decrement{  /*üçgenin normal hali*/
+  border-width: 5px 5px 0px 0px;
+  /* border-color: transparent transparent #06b5f0 transparent; */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(121, 255, 108)'><polygon points='50,00 0,50 100,50'/></svg>");
+  background-position: center 4px;
+  height: 16px;
+  width: 16px;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover{  /*Hover yapınca üçgen mavi olsun*/
+    /* border-color: transparent transparent lime transparent; */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(6, 222, 225)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:active{  /*Üçgene basınca gri olsun olsun*/
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='50,00 0,50 100,50'/></svg>");
+
+}
+
+
+
+/*DOWN BUTTONS*/
+::-webkit-scrollbar-button:single-button:vertical:increment {  /*üçgenin normal hali*/
+    border-width: 0px 0px 5px 5px;
+    /* border-color: #06b8f3 transparent transparent transparent; */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(121, 255, 108)'><polygon points='0,0 100,0 50,50'/></svg>");
+    background-position: center 4px;
+    height: 16px;
+    width: 16px;
+  }
+  
+::-webkit-scrollbar-button:vertical:single-button:increment:hover { /*Hover yapınca üçgen mavi olsun*/
+    /* border-color: lime transparent transparent transparent; */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(6, 222, 225)'><polygon points='0,0 100,0 50,50'/></svg>");
+  }
+
+::-webkit-scrollbar-button:single-button:vertical:increment:active{ /*Üçgene basınca gri olsun olsun*/
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
