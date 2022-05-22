@@ -14,7 +14,6 @@ class BookingController extends Controller {
         $date = $request->input("date");
         $service = $request->input("service");
         $periods = DB::select('SELECT period from bookings WHERE service = ? AND date = ?', [$service,$date]);
-    
         return view("booking_cont.index" ,["periods"=>$periods,"service"=>$service,"date"=>$date]);
     }
     public function index(Request $request){
@@ -34,6 +33,8 @@ class BookingController extends Controller {
         $post -> status = "OK";
         $post -> save(); 
         Mail::to($post->email)->send(new Info($post));
-        return back();
+        return view('payment.index',['persons'=>$post->persons,'service'=>$post->service]);
+
+        //return redirect('/payment',['persons'=>$post->persons,'service'=>$post->service]);
     }
 }
