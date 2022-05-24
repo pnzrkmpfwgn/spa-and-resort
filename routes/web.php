@@ -31,7 +31,7 @@ Route::post('feedbacks',[FeedbackController::class,'store'])->name('feedbacks');
 Route::get('/booking',[BookingController::class,'index'])->name('booking');
 Route::post('booking',[BookingController::class,'check'])->name('booking');
 Route::post('booking_cont',[BookingController::class,'store'])->name('booking_cont');
-Route::get('/payment/{service}/{persons}',[PaymentController::class,'index'])->name('payment');
+Route::get('/thank-you  ',[PaymentController::class,'index'])->name('payment');
 Route::get('/cancel-booking',[CancelBookingController::class,'index'])->name('cancel-booking');
 Route::post('cancel-booking',[CancelBookingController::class,'cancel'])->name('cancel-booking');
 Route::get('/salon',[SalonController::class,'index'])->name('salon');

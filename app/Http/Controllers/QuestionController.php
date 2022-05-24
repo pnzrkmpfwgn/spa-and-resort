@@ -15,7 +15,7 @@ class QuestionController extends Controller {
         $post -> email = $request -> email;
         $post -> save(); 
         Mail::to($post->email)->send(new QuestionAnswered);
-        return back();
+        return view('ask_final.index');
     }
 
     public function index(){

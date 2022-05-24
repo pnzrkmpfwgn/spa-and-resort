@@ -23,7 +23,7 @@
         <div class="row">
             <div class="col-75">
               <div class="payment_container">
-                <form action="/action_page.php">
+                <form action="{{route('payment')}}">
           
                   <div class="row">
                     <div class="col-50">

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class PaymentController extends Controller
 {
-    public function index($service,$persons){
-        return view('payment.index',[$service,$persons]);
+    public function index(){
+        return view('booking_final.index');
     }
 }

@@ -14,7 +14,7 @@ class CancelBookingController extends Controller {
         $id = $request->input("payment_id");
         DB::table('bookings')->where('payment_id',$id)->update(['status'=>'Cancelled']);
        
-        return back();
+        return view('cancel_final.index');
     }
     //Create a function here to change status inside booking table to cancelled
 }

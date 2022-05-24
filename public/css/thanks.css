@@ -1,0 +1,20 @@
+body{
+    background:rgb(34, 33, 33);
+}
+
+.home-btn{
+    background-color: rgba(194,164,113,255);
+}
+
+.message-container{
+    position: relative;
+    top: 150px;;
+}
+
+.heading{
+    color:rgba(194,164,113,255);
+}
+
+.message{
+    color:rgba(194,164,113,255);
+}

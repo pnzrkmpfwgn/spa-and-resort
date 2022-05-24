@@ -12,7 +12,7 @@ class FeedbackController extends Controller {
         $post -> feedback = $request-> feedback;
         $post -> email = $request -> email;
         $post -> save(); 
-        return back();
+        return view('feedback_final.index');
     }
     public function index(){
         return view('Feedback.index');

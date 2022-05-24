@@ -38,7 +38,7 @@ body{
 }
 
 #offcanvas-button{
-    position:absolute;
+    position:fixed;
     left: 1320px;
     top:15px;
     z-index:5;
