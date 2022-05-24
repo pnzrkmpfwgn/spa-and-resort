@@ -307,7 +307,7 @@
       <div class="col-md-6 col-lg-3">
         <div class="card bg-dark" id="massageCard">
           <div class="card-body text-center">
-            <img src="images/8.PNG" class="rounded-circle mb-2" alt="yuumi" id="yuumi">
+            <img src="images/11.PNG" class="rounded-circle mb-2" alt="yuumi" id="yuumi">
             <h3 class="card-title mb-3 icon-gold">Yumi Matsutoya</h3>
             <p class="card-text icon-gold">Ülkü Spa is no any other Spa's you know ,it's such a experience that i still cannot forget when i first come here i ask the who is the owner they said its famous Ülkü Ayberk Yiğit.</p>
             <a href="https://twitter.com"><i class="bi bi-twitter TextOrIcon-Gold mx-1"></i></a>
@@ -349,7 +349,7 @@
       <div class="col-md-6 col-lg-3">
         <div class="card bg-dark" id="massageCard">
           <div class="card-body text-center">
-            <img src="images/11.PNG" class="rounded-circle mb-2" id="yuumi">
+            <img src="images/8.PNG" class="rounded-circle mb-2" id="yuumi">
             <h3 class="card-title mb-3 icon-gold">Himari Sara</h3>
             <p class="card-text icon-gold">I have over 15 years of experience working as Masseuser in total, and working with Ülkü Spa more than 4 years now , i can say its the best Spa Saloon i have ever seen to date.</p>
             <a href="https://twitter.com"><i class="bi bi-twitter TextOrIcon-Gold mx-1"></i></a>
