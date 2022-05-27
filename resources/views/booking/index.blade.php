@@ -110,7 +110,7 @@
     </div>
 </div>
 
-<button type="submit" class="btn btn-black btn-lg" id="CheckForAV" onclick="ShowTheOptions()">Check For Availablility</button>
+<button type="submit" class="btn btn-black btn-lg" id="CheckForAV">Check For Availablility</button>
      
 </div>
 </form> 

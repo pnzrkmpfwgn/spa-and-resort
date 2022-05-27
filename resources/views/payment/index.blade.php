@@ -24,7 +24,7 @@
             <div class="col-75">
               <div class="payment_container">
                 <form action="{{route('payment')}}">
-          
+          @csrf
                   <div class="row">
                     <div class="col-50">
                       <h3>Billing Address</h3>
@@ -90,34 +90,35 @@
                     <b></b>
                   </span>
                 <hr>
-                <p>Total: <span class="price" style="color:black">  <b>  
+                <p>Total:&nbsp; <span class="price" style="color:black">  <b>  
                     @switch($service)
                     @case("RELAXING MASSAGE 60'")
-                         {{300*$persons}}TL
+                         {{300*($persons+1)}}TL
                         @break
                 
-                        @case("RELAXING MASSAGE 45")
-                        {{200*$persons}}TL
+                        @case("RELAXING MASSAGE 45'")
+                        {{200*($persons+1)}}TL
+                        <span> {{$service}} </span>
                         @break
 
                         @case("LOVE YOURSELF & 45' MASSAGE")
-                        {{400*$persons}}TL
+                        {{400*($persons+1)}}TL
                         @break
 
                         @case("Women's Haircut w/Styling")
-                        {{700*$persons}}TL
+                        {{700*($persons+1)}}TL
                         @break
 
                         @case("Men's Haircut")
-                        {{300*$persons}}TL
+                        {{300*($persons+1)}}TL
                         @break
 
                         @case("Children's Haircut")
-                        {{100*$persons}}TL
+                        {{100*($persons+1)}}TL
                         @break
 
                     @default
-                        <span>?</span>
+                        <span> {{$service}} </span>
                 @endswitch   
                 
                 </b></span></p>

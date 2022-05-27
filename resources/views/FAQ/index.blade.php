@@ -60,14 +60,6 @@
              <a href="/cancel-booking"><button class="btn btn-secondary" type="button" id="offcanvas_button2">Cancel</button></a>
              <br>
              <br>
-             <p class="TextOrIcon-Gold">Our Services:</p>
-             <a href="404.html"><button class="btn btn-secondary" type="button" id="offcanvas_button2">Services</button></a>
-             <br>
-             <br>
-             <p class="TextOrIcon-Gold">Our Products:</p>
-             <a href="404.html"><button class="btn btn-secondary" type="button" id="offcanvas_button2">Products</button></a>
-             <br>
-             <br>
              <p class="TextOrIcon-Gold">Give Us your feedback:</p>
              <a href="/feedbacks"><button class="btn btn-secondary" type="button" id="offcanvas_button2">FeedBack</button></a>
              <br>

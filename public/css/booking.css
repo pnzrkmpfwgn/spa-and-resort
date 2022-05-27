@@ -2,14 +2,21 @@ body{
     background:rgb(34, 33, 33);
 }
 
+#period_container{
+    width: 200%;
+    height: 200%;
+}
+
 #persons{
     position:absolute;
-    top:2750px;
+    top: 400px;
+    left:200px;
 }
 
 #personel_info{
     position:absolute;
-    top:2900px;
+    top: 520px;
+    left:200px;
 }
 
 #email{
@@ -17,17 +24,17 @@ body{
     top:30px;
 }
 
-#space{
+/* #space{
     position: absolute;
     top: 3300px;
     color:rgb(34, 33, 33);
-}
+} */
 
 #continue{
     background-color: rgba(194,164,113,255);
     position: relative;
-    left:100px;
-    top:3100px;
+    left:200px;
+    top:800px;
 }
 
 #SpaLogo{
@@ -191,12 +198,14 @@ body{
 #TimeBox{
     background-color: rgb(41, 40, 39);
     position:absolute;
-    top:1300px;
+    top:200px;
+    left:150px;
 }
 
 
 #timebuttons{
     border-radius: 5px;
+    display: inline-block;
     background: linear-gradient(126deg, rgba(27, 27, 27, 1) 0%, rgba(18, 18, 18, 1) 100%);
     color:rgba(194,164,113,255);
     border-top-color: rgba(194, 164, 113, .3);
@@ -211,6 +220,7 @@ body{
 
 #timebuttons_disabled{
     border-radius: 5px;
+    display: inline-block;
     background: gray;
     color:rgba(194,164,113,255);
     border-top-color: gray;
@@ -253,18 +263,9 @@ body{
 
 #Salon_Option_h4{
     position:absolute;
-    top:-30px;
+    top:140px;
     left:530px;
 }
-
-#Spa_Option_h4{
-    position:absolute;
-    top:-30px;
-    left:530px;
-}
-
-
-
 
 
 /* CustomScrollBar */

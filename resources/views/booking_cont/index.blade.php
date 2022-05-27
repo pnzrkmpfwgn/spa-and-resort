@@ -18,7 +18,7 @@
   <title>Booking Process</title>
   </head>
   <body>
-    <form action="{{route('booking')}}" method="POST">
+    {{-- <form action="{{route('booking')}}" method="POST">
       <div class="container mt-5" id="Form_Action">
       
         
@@ -112,11 +112,11 @@
         </div>
       </div>
       
-      <button type="submit" class="btn btn-black btn-lg" id="CheckForAV" onclick="ShowTheOptions()">Check For Availablility</button>
+      <button type="submit" class="btn btn-black btn-lg" id="CheckForAV">Check For Availablility</button>
          
       </div>
-      </form>
-      <div id="form_container" >
+      </form> --}}
+      <div id="form_container form_action" >
         
         <form action="{{route('booking_cont')}}" method="POST" > 
           <h2 class="TextOrIcon-Grey" id="Salon_Option_h4">Select an Available period</h2>
@@ -156,7 +156,7 @@
            @endif
            </div>
           
-      </div>
+      
       <div class="form-floating mb-3 mt-3" id="persons">
       <h4 class="TextOrIcon-Gold">Select Number of People</h2>
           <select class="form-select" id="SelectNumOfPeop" name="persons" onchange="showLabel('LabelSelectNumOfPeop',this)">
@@ -165,7 +165,6 @@
             <option value="2">3</option>
             <option value="3">4</option>
           </select>
-        <label for="SelectNumOfPeop" class="form-label">Choose how many you will be</label>
       </div>
       <div  class="form-floating mb-3 mt-3" id="personel_info">
         <label class="TextOrIcon-Gold" for="name_surname"> Name Surname </label>
@@ -182,6 +181,7 @@
       <input style="display:none" type="string" name="date" id="date" value="{{$date}}" >
       <input style="display: none" type="string" name="service" id="service"  value="{{$service}}" >
       <button class="btn btn-black btn-lg" id="continue" > Continue </button>
+    </div>
     </form>
     <div id="space" >Nano Machines Son</div>
   </body>
