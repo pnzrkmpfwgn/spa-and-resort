@@ -160,10 +160,10 @@
       <div class="form-floating mb-3 mt-3" id="persons">
       <h4 class="TextOrIcon-Gold">Select Number of People</h2>
           <select class="form-select" id="SelectNumOfPeop" name="persons" onchange="showLabel('LabelSelectNumOfPeop',this)">
-            <option value="0">1</option>
-            <option value="1">2</option>
-            <option value="2">3</option>
-            <option value="3">4</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
           </select>
       </div>
       <div  class="form-floating mb-3 mt-3" id="personel_info">

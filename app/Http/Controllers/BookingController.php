@@ -32,7 +32,7 @@ class BookingController extends Controller {
         $post -> payment_id = $uniqid;
         $post -> status = "OK";
         $post -> save(); 
-       // Mail::to($post->email)->send(new Info($post));
+       Mail::to($post->email)->send(new Info($post));
         return view('payment.index',['persons'=>$post->persons,'service'=>$post->service]);
 
         //return redirect('/payment',['persons'=>$post->persons,'service'=>$post->service]);
