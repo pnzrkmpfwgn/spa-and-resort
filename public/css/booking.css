@@ -96,7 +96,7 @@ body{
 #OptionsForSpaMain2{
     position:absolute;
     /* left:270px; */
-    top:550px;
+    top:600px;
 }
 
 
@@ -264,8 +264,7 @@ body{
 
 #Salon_Option_h4{
     position:absolute;
-    top:140px;
-    left:530px;
+    top:-35px;
 }
 
 

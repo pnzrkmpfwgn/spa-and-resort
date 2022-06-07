@@ -72,7 +72,7 @@
 
 
 <div class="container mt-5" id="OptionsForSpaMain2">
-  <h2 class="TextOrIcon-Grey" id="Salon_Option_h4">Your Salon Option's</h2>
+  <h2 class="TextOrIcon-Grey" id="Salon_Option_h4">Your Salon Option's</h2> {{--Burayı yap--}}
   <div class="container mt-2" id="BoxFor1">
    
     <input required type="radio" name="service" id="" value="Women's Haircut w/Styling" > <h5 class="TextOrIcon-Gold" id="aireloveh">Women's Haircut w/Styling</h5>
