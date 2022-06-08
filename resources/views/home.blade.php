@@ -123,7 +123,7 @@
           Ülküspabook@hotmail.com.
         </pre>
         
-        <a href="HoursAndGuide.html" target="_Blank" class="btn btn-dark TextOrIcon-Gold mt-3 m-5">
+        <a href="/HAG" target="_Blank" class="btn btn-dark TextOrIcon-Gold mt-3 m-5">
           <i class="bi bi-chevron-right"></i> Hours And Guidelines
         </a>
         

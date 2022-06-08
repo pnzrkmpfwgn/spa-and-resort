@@ -8,6 +8,7 @@ use App\Http\Controllers\BookingController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\SalonController;
 use App\Http\Controllers\CancelBookingController;
+use App\Http\Controllers\HAGController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,3 +36,4 @@ Route::get('/thank-you',[PaymentController::class,'index'])->name('payment');
 Route::get('/cancel-booking',[CancelBookingController::class,'index'])->name('cancel-booking');
 Route::post('cancel-booking',[CancelBookingController::class,'cancel'])->name('cancel-booking');
 Route::get('/salon',[SalonController::class,'index'])->name('salon');
+Route::get('/HAG',[HAGController::class,'index']);
